@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# CMake Extras
+build
+
+# VS Code extras
+*.json
