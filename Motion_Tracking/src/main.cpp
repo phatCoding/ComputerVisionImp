@@ -27,11 +27,9 @@ int main()
     ObjectDetection::TrackedObjectMonitor tracking_monitor;
     std::vector<ObjectDetection::TrackedObject> possibleObjects;
 
-    // Vidoe 1
-    //capVideo.open("../../04_Motion_Detec/fussgeanger.avi");
 
     // Video 2
-    capVideo.open("../../04_Motion_Detec/olympiabrückeverkehr.mp4");
+    capVideo.open("/home/phati/Dev/CV/ComputerVisionImp/Motion_Tracking/olympiabrückeverkehr.mp4");
 
     if (!capVideo.isOpened())
     {

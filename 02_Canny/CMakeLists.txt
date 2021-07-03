@@ -1,6 +1,0 @@
-cmake_minimum_required(VERSION 3.2)
-project( CannyEdgeDetec )
-find_package( OpenCV REQUIRED )
-include_directories( ${OpenCV_INCLUDE_DIRS} )
-add_executable( CannyEdgeDetec CannyEdgeDetec.cpp )
-target_link_libraries( CannyEdgeDetec ${OpenCV_LIBS} )

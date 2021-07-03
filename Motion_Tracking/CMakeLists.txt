@@ -1,8 +1,6 @@
-# This Project was build with Generator MinGw and CXX-Compiler g++
-
 cmake_minimum_required(VERSION 3.2)
 
-project( Motion_Detec )
+project( Motion_Tracking )
 
 set(MY_OBJDETEC_DIR src/objectdetection/)
 set(MY_SOURCE_DIR src/)
@@ -22,6 +20,6 @@ add_library(MyLib
         "${MY_OBJDETEC_DIR}/trackedobject.cpp"
 )
 
-add_executable(Motion_Detec "${MY_SOURCE_DIR}/main.cpp") 
+add_executable(Motion_Tracking "${MY_SOURCE_DIR}/main.cpp") 
 
-target_link_libraries(Motion_Detec PRIVATE MyLib  ${OpenCV_LIBS})
+target_link_libraries(Motion_Tracking PRIVATE MyLib  ${OpenCV_LIBS})
